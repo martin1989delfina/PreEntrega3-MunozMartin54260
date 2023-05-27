@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/backg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $color-principal;
+    }
+p {
+    text-align: justify;
+.imgindex {
+    max-width: 90%;
+    padding: 20px;
+}
+}
+.nav-link, 
+nav-link.active,
+.navbar-nav .nav-link.active .container-fluid {
+    color: $color-principal;
+    transition: all 1s;
+        &:hover {
+        color: $color-terciario;
+        }
+}
+.menu-nav {
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 1s;
+        &:hover {
+        color: $color-terciario;
+        }
+        
+}
+.navbar-brand {
+    color: $color-principal;
+    transition: all 1s;
+    &:hover {
+        color: $color-terciario;}
+}
+.navbar-toggler {
+    border:solid rgba(30,74,39,1) 2px;
+}
+
+.header {
+    background-color: $color-secundario;
+} 
+.boton-subir {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 10px solid rgba(30,74,39,1);
+    width: 30%;
+    @include sombras-verdes;
+    padding: 2px;
+    background-color: rgb(186, 201, 194);
+    transition: 1s;
+    border-radius: 20px;
+}
+.botonSubir a{
+    text-decoration: none;
+    color: $color-secundario;
+    font-style: bold;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 2px;
+            &:hover {
+        transition: 0.7s;
+        background-color: black;
+        color: white;
+    }
+}
+.footer {
+    text-align: center;
+}
+.derechos {
+        font-size: $font-ss;
+}
+.redes {
+    @include flex-row-centrado;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 15px;
+    }
+.redes-boton img {
+    border-radius: 100%;
+    @include sombras-verdes;
+    padding: 2px;
+        
+}
+@media (min-width: $tablet){
+    .redes {
+        flex-direction: column;
+        position: fixed;
+        top: 70%;
+        right: 3%;
+        padding: 3px;
+        width: 50px;
+}
+}
+
+@media (min-width: $tablet) {
+    h1{
+        font-size: $font-sb;
+    }
+    p {
+        font-size: $font-sm;
+    }
+    .imgindex {
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;
+        margin: auto;
+    }
+    .boton-subir{
+        width: 150px;
+    }
+}

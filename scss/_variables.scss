@@ -1,0 +1,44 @@
+/*COLORES*/
+$color-principal: aliceblue;
+$color-secundario: black;
+$color-terciario: rgb(15, 174, 47);
+$color-4: rgb(183, 200, 183);
+
+/*MARGENES*/
+$mg-min: 10px;
+$mg-min2: 20px;
+$mg-mid: 40px;
+$mg-big: 60px;
+/*TAMAÑO DE FUENTES*/
+$font-ss: 14px;
+$font-sm: 20px;
+$font-sb: 60px;
+/*RESOLUCIONES*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px;
+/*Mixin*/
+@mixin flex-colum-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-row-centrado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin texto-centrado {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+@mixin sombras-verdes {
+    -webkit-box-shadow: 0px 0px 31px 11px rgba(30,74,39,1);
+    -moz-box-shadow: 0px 0px 31px 11px rgba(30,74,39,1);
+    box-shadow: 0px 0px 31px 11px rgba(30,74,39,1);
+}

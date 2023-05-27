@@ -1,0 +1,38 @@
+.mainLibros {
+    @include texto-centrado;
+}
+
+.card {
+    width: 240px;
+    height: 420px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    color: $color-principal;
+    background-color: $color-secundario;
+    transition: 0.7s;
+    border-radius: 20px;
+    @include sombras-verdes;
+    margin-bottom: 10px;
+        &:hover {
+            transition: 0.7s;
+            color: $color-secundario;
+            background-color: $color-4;
+        }
+    }
+.card-img-top {
+    width: 70%;
+    margin-top: 10px;
+    padding: 10px;
+    @include sombras-verdes;
+}
+.section-card {
+    padding: 20px;
+}
+@media (min-width: $tablet) {
+    .section-card {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}

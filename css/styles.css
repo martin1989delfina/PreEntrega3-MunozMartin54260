@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/*COLORES*/
+/*MARGENES*/
+/*TAMAÑO DE FUENTES*/
+/*RESOLUCIONES*/
+/*Mixin*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/backg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: aliceblue;
+}
+
+p {
+  text-align: justify;
+}
+p .imgindex {
+  max-width: 90%;
+  padding: 20px;
+}
+
+.nav-link,
+nav-link.active,
+.navbar-nav .nav-link.active .container-fluid {
+  color: aliceblue;
+  transition: all 1s;
+}
+.nav-link:hover,
+nav-link.active:hover,
+.navbar-nav .nav-link.active .container-fluid:hover {
+  color: rgb(15, 174, 47);
+}
+
+.menu-nav {
+  text-decoration: none;
+  color: aliceblue;
+  transition: all 1s;
+}
+.menu-nav:hover {
+  color: rgb(15, 174, 47);
+}
+
+.navbar-brand {
+  color: aliceblue;
+  transition: all 1s;
+}
+.navbar-brand:hover {
+  color: rgb(15, 174, 47);
+}
+
+.navbar-toggler {
+  border: solid rgb(30, 74, 39) 2px;
+}
+
+.header {
+  background-color: black;
+}
+
+.boton-subir {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 10px solid rgb(30, 74, 39);
+  width: 30%;
+  -webkit-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  -moz-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  padding: 2px;
+  background-color: rgb(186, 201, 194);
+  transition: 1s;
+  border-radius: 20px;
+}
+
+.botonSubir a {
+  text-decoration: none;
+  color: black;
+  font-style: bold;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 2px;
+}
+.botonSubir a:hover {
+  transition: 0.7s;
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+}
+
+.derechos {
+  font-size: 14px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.redes-boton img {
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  -moz-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  padding: 2px;
+}
+
+@media (min-width: 768px) {
+  .redes {
+    flex-direction: column;
+    position: fixed;
+    top: 70%;
+    right: 3%;
+    padding: 3px;
+    width: 50px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .imgindex {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    margin: auto;
+  }
+  .boton-subir {
+    width: 150px;
+  }
+}
+.padre-index {
+  margin: auto;
+}
+
+.index-parrafos {
+  margin-left: 20px;
+}
+
+.img-index {
+  width: 50rem;
+  border-radius: 10%;
+  -webkit-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  -moz-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  margin-left: 12px;
+}
+
+.hp-img {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .img-index {
+    margin-left: 0;
+  }
+  .padre-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.mainBiografia {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.iframeBiografia {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 60%;
+  height: 60%;
+  background-color: black;
+  border-radius: 5%;
+  margin-bottom: 4rem;
+  -webkit-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  -moz-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+}
+
+@media (min-width: 768px) {
+  .iframeBiografia {
+    width: auto;
+  }
+}
+.mainLibros {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.card {
+  width: 240px;
+  height: 420px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  background-color: black;
+  transition: 0.7s;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  -moz-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  margin-bottom: 10px;
+}
+.card:hover {
+  transition: 0.7s;
+  color: black;
+  background-color: rgb(183, 200, 183);
+}
+
+.card-img-top {
+  width: 70%;
+  margin-top: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  -moz-box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+  box-shadow: 0px 0px 31px 11px rgb(30, 74, 39);
+}
+
+.section-card {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .section-card {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+.bestiario {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.parrafo-contacto {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.formulario-contacto {
+  margin: auto;
+  margin-top: 100px;
+}
+
+.form-control {
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .form-control {
+    width: 500px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

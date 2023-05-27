@@ -1,0 +1,30 @@
+.padre-index {
+    margin: auto;
+    
+}
+.index-parrafos {
+    margin-left: 20px;
+}
+.img-index {
+        width: 50rem;
+        border-radius: 10%;
+        @include sombras-verdes;
+        margin-left: 12px;
+}
+.hp-img {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+h1, h2{
+    text-align: center;
+}
+
+@media (min-width: $tablet) {
+    .img-index {
+        margin-left: 0;
+    }
+    .padre-main{
+        @include flex-colum-centrado;
+    }
+}
