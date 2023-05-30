@@ -1,7 +1,9 @@
 .mainBiografia {
     @include texto-centrado;
 }
-
+.tituloBiografia {
+    animation: titulos-animacion 2s ease 0s 1 normal forwards;
+}
 .iframeBiografia {
     display: flex;
     flex-direction: row;

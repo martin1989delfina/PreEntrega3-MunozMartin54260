@@ -1,6 +1,9 @@
 .mainLibros {
     @include texto-centrado;
 }
+.librosTitulo {
+    animation: titulos-animacion 2s ease 0s 1 normal forwards;
+}
 
 .card {
     width: 240px;

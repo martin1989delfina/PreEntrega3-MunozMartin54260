@@ -10,6 +10,7 @@
         border-radius: 10%;
         @include sombras-verdes;
         margin-left: 12px;
+        animation: imagen-index 2s ease 0s 2 reverse both;
 }
 .hp-img {
     margin-top: 50px;

@@ -1,6 +1,9 @@
 .contacto {
     @include texto-centrado;
 }
+.contactoTitulo {
+    animation: titulos-animacion 2s ease 0s 1 normal forwards;
+}
 .parrafo-contacto{
     margin-top: 20px;
     text-align: left;

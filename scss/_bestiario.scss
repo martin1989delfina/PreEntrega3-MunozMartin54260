@@ -1,3 +1,6 @@
 .bestiario {
     @include texto-centrado;
 }
+.tituloBestiario {
+    animation: titulos-animacion 2s ease 0s 1 normal forwards;
+}
