@@ -148,10 +148,11 @@ nav-link.active:hover,
   .redes {
     flex-direction: column;
     position: fixed;
-    top: 70%;
+    top: 80%;
     right: 3%;
     padding: 3px;
     width: 50px;
+    opacity: 50%;
   }
 }
 @media (min-width: 768px) {
