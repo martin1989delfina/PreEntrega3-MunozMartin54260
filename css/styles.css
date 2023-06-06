@@ -122,7 +122,9 @@ nav-link.active:hover,
 }
 
 .derechos {
+  display: flex;
   font-size: 14px;
+  justify-content: center;
 }
 
 .redes {

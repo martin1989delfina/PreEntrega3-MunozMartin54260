@@ -79,7 +79,9 @@ nav-link.active,
     text-align: center;
 }
 .derechos {
-        font-size: $font-ss;
+    display: flex;
+    font-size: $font-ss;
+    justify-content: center;   
 }
 .redes {
     @include flex-row-centrado;
